@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Learning</title>
+	<link rel="stylesheet"  href="css/bootstrap.css">
+	<script src="js/angular.js"></script>
+	<script src="js/myapp.js"></script>
+
+
+</head>
+<body ng-app="myApp">
+<div ng-controller="MainCtrl">
+{{text}}
+<p class="name">Welcome, {{guy.details.name}}</p>
+<p class="number"> Number: {{guy.details.number}}</p>
+
+<form role="form"class="simple-form form-group">
+Name: <input type="text" ng-model="user.name"/> <br/>
+Number: <input type="number" ng-model="user.value"/>
+
+
+</form>
+<pre>{{user}}</pre>
+
+
+<input type="text" ng-model="myModel"/>
+<p>{{myModel}}</p>
+
+<a custom-button>Click me</a>
+
+
+</div>
+
+
+
+
+
+</body>
+
+</html>
